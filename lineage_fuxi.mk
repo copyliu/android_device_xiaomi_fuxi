@@ -18,6 +18,12 @@ $(call inherit-product, vendor/bcr/bcr.mk)
 
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
+# Sign
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+
+# GMS
+$(call inherit-product, vendor/google/gms/gms-vendor.mk)
+
 
 PRODUCT_DEVICE := fuxi
 PRODUCT_NAME := lineage_fuxi

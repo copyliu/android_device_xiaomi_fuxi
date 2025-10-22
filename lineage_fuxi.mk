@@ -22,7 +22,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 $(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 
 # GMS
-$(call inherit-product, vendor/google/gms/gms-vendor.mk)
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 
 
 PRODUCT_DEVICE := fuxi

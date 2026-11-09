@@ -14,6 +14,18 @@ $(call inherit-product, device/xiaomi/fuxi/device.mk)
 # Inherit LineageOS configurations
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+
+
+$(call inherit-product, vendor/bcr/bcr.mk)
+
+#$(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
+
+# Sign
+#$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+
+# GMS
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
 PRODUCT_DEVICE := fuxi
 PRODUCT_NAME := lineage_fuxi
 PRODUCT_BRAND := Xiaomi
